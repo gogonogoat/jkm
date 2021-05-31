@@ -1,0 +1,50 @@
+html,body{
+	background:rgba(255,128,0,1);
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	min-height:100%;
+}
+
+form{
+	width:400px;
+	padding:2rem 0rem;
+	margin-bottom:2rem;
+	background:rgba(255,255,255,0.5);
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+.user_id div,
+.user_pw div{
+	width:2rem;
+	display:inline-block;
+	margin-bottom:1rem;
+}
+.user_id input,
+.user_pw input{
+	width:8rem;
+}
+
+.note{
+	width:400px;
+	padding:2rem 0rem;
+	background:rgba(255,255,255,0.5);
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+.note p {
+	font-weight:bold;
+}
+
+.note table{
+	border-collapse: collapse;
+}
+.note td,th{
+	padding:0.5rem;
+	border: 1px #000 solid;
+}

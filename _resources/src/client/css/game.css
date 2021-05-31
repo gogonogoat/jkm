@@ -1,0 +1,213 @@
+html{
+	background-image: url("../img/html/_/argyledt.svg");
+	background-size:15pc auto;
+}
+body{
+	display:flex;
+	flex-direction:column;
+	align-content: center;
+	align-items:center;
+}
+#app_frame{
+	width:480px;
+	height:640px;
+	padding:88px 86px;
+	background-size:contain;
+	background-image: url("../img/html/a-littledream.com/goldenframe/fix/frame_s.jpg");
+}
+
+/*以下ゲームクライアント内の記述*/
+#application { width:480px; height:640px;}
+
+#d_1, #d_10, #d_100,
+#roulette_g, #coin_counter, 
+#lamp_win, #lamp_draw, #lamp_lose,
+#wood_back, #gold_ring, #black_back, #enemy_hand_g,
+#p_rock_g, #p_scissors_g, #p_papar_g, #player_bet_g
+{ position:absolute; background-size:cover;}
+
+#monitor{
+	position:relative;
+	width:480px;
+	height:560px;
+}
+#roulette_g{
+	width:400px;
+	height:400px;
+	top:120px;
+	left:40px;
+}
+#coin_counter{
+	width:108px;
+	height:75px;
+	top:473px;
+	left:368px;
+}
+#d_1, #d_10, #d_100{
+	width:15px;
+	height:30px;
+	top:26px;
+}
+#d_100	{left:35px;}
+#d_10	{left:55px;}
+#d_1	{left:75px;}
+#wood_back{
+	width:470px;
+	height:470px;
+	top:60px;
+	left:4px;
+}
+#lamp_win, #lamp_draw, #lamp_lose{ position:absolute; background-size:cover;}
+#lamp_win	{ width:152px; height:152px; top:104px; left: 26px;}
+#lamp_draw	{ width:150px; height:108px; top: 70px; left:165px;}
+#lamp_lose	{ width:152px; height:152px; top:104px; left:303px;}
+#gold_ring{
+	width:488px;
+	height:488px;
+	top:60px;
+	left:-4px;
+}
+#black_back{
+	width:360px;
+	height:360px;
+	top:125px;
+	left:60px;
+}
+#enemy_hand_g{
+	width:280px;
+	height:280px;
+	top:180px;
+	left:100px;
+}
+
+/*
+#battle_result{
+	background:rgba(160,160,160,0.1);
+	width:120px;
+	height:32px;
+}
+#enemy_hand{
+	background:rgba(255,160,160,0.1);
+	width:120px;
+	height:32px;
+}
+
+#roulette{
+	background:rgba(160,255,160,0.1);
+	width:120px;
+	height:32px;
+}
+
+#coins{
+	background:rgba(160,160,255,0.1);
+	width:120px;
+	height:32px;
+}
+*/
+#player_button{
+	position:relative;
+	width:480px;
+	height:200px;
+	margin-top:-120px;
+}
+#player_hand{
+	position:relative;
+	width:360px;
+	height:80px;
+}
+#p_rock_g, #p_scissors_g, #p_papar_g{
+	width:88px;
+	height:88px;
+	top:110px;
+}
+#p_rock_g			{left:35px;}
+#p_scissors_g		{left:145px;}
+#p_papar_g			{left:255px;}
+#player_bet_g		{width:108px; height:75px; top:115px; left:368px;}
+#application			{background-image: url("../img/base/background.png");}
+#coin_counter			{background-image: url("../img/base/coin.png");}
+#wood_back				{background-image: url("../img/base/wood_back.png");}
+#gold_ring				{background-image: url("../img/base/ring_gold2.png");}
+#black_back				{background-image: url("../img/base/black_circle.png");}
+.r00					{background-image: url("../img/slot_pannel/std/default.png");}
+.r01					{background-image: url("../img/slot_pannel/quad/01.png");}
+.r02					{background-image: url("../img/slot_pannel/quad/02.png");}
+.r03					{background-image: url("../img/slot_pannel/quad/03.png");}
+.r04					{background-image: url("../img/slot_pannel/quad/04.png");}
+.r05					{background-image: url("../img/slot_pannel/quad/05.png");}
+.r06					{background-image: url("../img/slot_pannel/single/dark_01.png");}
+.r07					{background-image: url("../img/slot_pannel/single/dark_02.png");}
+.r08					{background-image: url("../img/slot_pannel/single/dark_03.png");}
+.r09					{background-image: url("../img/slot_pannel/single/dark_04.png");}
+.r10					{background-image: url("../img/slot_pannel/single/dark_05.png");}
+.r11					{background-image: url("../img/slot_pannel/single/dark_06.png");}
+.r12					{background-image: url("../img/slot_pannel/single/dark_07.png");}
+.r13					{background-image: url("../img/slot_pannel/single/dark_08.png");}
+.r14					{background-image: url("../img/slot_pannel/single/dark_09.png");}
+.r15					{background-image: url("../img/slot_pannel/single/dark_10.png");}
+.r16					{background-image: url("../img/slot_pannel/single/dark_11.png");}
+.r17					{background-image: url("../img/slot_pannel/single/dark_12.png");}
+.r18					{background-image: url("../img/slot_pannel/single/dark_13.png");}
+.r19					{background-image: url("../img/slot_pannel/single/dark_14.png");}
+.r20					{background-image: url("../img/slot_pannel/single/dark_15.png");}
+.r21					{background-image: url("../img/slot_pannel/single/dark_16.png");}
+.r22					{background-image: url("../img/slot_pannel/single/dark_17.png");}
+.r23					{background-image: url("../img/slot_pannel/single/dark_18.png");}
+.r24					{background-image: url("../img/slot_pannel/single/dark_19.png");}
+.r25					{background-image: url("../img/slot_pannel/single/dark_20.png");}
+.num_0					{background-image: url("../img/num_7seg/0.png");}
+.num_1					{background-image: url("../img/num_7seg/1.png");}
+.num_2					{background-image: url("../img/num_7seg/2.png");}
+.num_3					{background-image: url("../img/num_7seg/3.png");}
+.num_4					{background-image: url("../img/num_7seg/4.png");}
+.num_5					{background-image: url("../img/num_7seg/5.png");}
+.num_6					{background-image: url("../img/num_7seg/6.png");}
+.num_7					{background-image: url("../img/num_7seg/7.png");}
+.num_8					{background-image: url("../img/num_7seg/8.png");}
+.num_9					{background-image: url("../img/num_7seg/9.png");}
+.num_10					{background-image: url("../img/num_7seg/_off.png");}
+#enemy_hand_g.black		{background-image: url("../img/card_enemy/type_b.png");}
+#enemy_hand_g.rock		{background-image: url("../img/card_enemy/type_g.png");}
+#enemy_hand_g.scissors	{background-image: url("../img/card_enemy/type_c.png");}
+#enemy_hand_g.papar		{background-image: url("../img/card_enemy/type_p.png");}
+#lamp_win.on			{background-image: url("../img/game_result/win.png");}
+#lamp_win.off			{background-image: url("../img/game_result/win_dark.png");}
+#lamp_draw.on			{background-image: url("../img/game_result/draw.png");}
+#lamp_draw.off			{background-image: url("../img/game_result/draw_dark.png");}
+#lamp_lose.on			{background-image: url("../img/game_result/lose.png");}
+#lamp_lose.off			{background-image: url("../img/game_result/lose_dark.png");}
+#p_rock_g.on			{background-image: url("../img/button/gl.png");}
+#p_rock_g.off			{background-image: url("../img/button/gd.png");}
+#p_scissors_g.on		{background-image: url("../img/button/cl.png");}
+#p_scissors_g.off		{background-image: url("../img/button/cd.png");}
+#p_papar_g.on			{background-image: url("../img/button/pl.png");}
+#p_papar_g.off			{background-image: url("../img/button/pd.png");}
+#player_bet_g.on		{background-image: url("../img/button/bl.png");}
+#player_bet_g.off		{background-image: url("../img/button/bd.png");}
+
+/*
+#p_rock{
+	background:rgba(255,160,160,0.1);
+	width:80px;
+	height:80px;
+}
+
+#p_scissors{
+	background:rgba(160,255,160,0.1);
+	width:80px;
+	height:80px;
+}
+
+#p_paper{
+	background:rgba(160,160,255,0.1);
+	width:80px;
+	height:80px;
+}
+
+#player_bet{
+	background:rgba(160,255,160,0.1);
+	width:120px;
+	height:80px;
+	margin-left:360px;
+}
+*/

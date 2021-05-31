@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JKM</title>
+	<link rel="stylesheet" href="_resources/src/client/css/normalize.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="_resources/src/client/css/game.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+<div id="app_frame">
+	<div id="application">
+		<div id="monitor">
+			<!--
+			<div>{{recepted}}</div>
+			<div>{{scene}}</div>
+			<div id="battle_result">{{battle_result}}</div>
+			<div id="enemy_hand">e_hand:{{e_hand}}</div>
+			<div id="roulette">{{roulette_cell}}</div>
+			<div id="coins">こいん のこり：{{coin}}</div>
+			-->
+			<div id="wood_back"></div>
+			
+			<div id="lamp_win"	v-bind:class="[classResultLumpW]"></div>
+			<div id="lamp_draw"	v-bind:class="[classResultLumpD]"></div>
+			<div id="lamp_lose"	v-bind:class="[classResultLumpL]"></div>
+			
+			<div id="black_back"></div>
+			<div id="enemy_hand_g"	v-bind:class="[classEnemyHand]"></div>
+			<div id="gold_ring"></div>
+			<div id="roulette_g"	v-bind:class="[classRoulette]"></div>
+			<div id="coin_counter">
+				<div id="d_100" v-bind:class="[classCoinD_100]"></div>
+				<div id="d_10"  v-bind:class="[classCoinD_10]" ></div>
+				<div id="d_1"   v-bind:class="[classCoinD_1]"  ></div>
+			</div>
+		</div>
+		<div id="player_button">
+			<div id="player_hand">
+				<!--
+				<div id="p_rock" @click="button_rock">ぐー</div>
+				<div id="p_scissors" @click="button_scissors">ちょき</div>
+				<div id="p_paper" @click="button_papar">ぱー</div>
+				-->
+				<div id="p_rock_g"		@click="button_rock"		v-bind:class="[classPlayerHandR]"></div>
+				<div id="p_scissors_g"	@click="button_scissors"	v-bind:class="[classPlayerHandS]"></div>
+				<div id="p_papar_g"		@click="button_papar"		v-bind:class="[classPlayerHandP]"></div>
+			</div>
+			<!--<div id="player_bet" @click="button_bet">こいんいれる</div>-->
+			<div id="player_bet_g" @click="button_bet" v-bind:class="[classPlayerHandB]"></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/lib/preloader.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/lib/tree_parser.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/lib/sound.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/lib/task_bullet.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/lib/task_trigger.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/lib/count_trigger.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/lib/counter.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/lib/random.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/lib/http_status.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/coin_monitor.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/mode/_.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/mode/open.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/mode/repeat.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/mode/wait.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/mode/battle.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/mode/result/_.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/mode/result/win.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/mode/result/draw.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/mode/result/lose.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/mode/roulette/_.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/mode/roulette/chose.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/client_classes/mode/roulette/reward.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/load_asset.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/vue_app.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/game_client_master.js"></script>
+<script type="text/javascript" src="_resources/src/client/js/jkm/_.js"></script>
+<!-- 
+	「<script type="text/javascript" src=""></script>」が大量に列挙されている様が見苦しい。
+	
+	今回に関してはまだ必要性が薄いと考えられるが
+	jsのローディングをベタ打ちではなく動的に行いたい。
+	
+	LoadAssetクラスを継承してツリー構造からscriptタグを吐くやつでも作ろうか
+ -->
+</body>
+</html>
